@@ -232,7 +232,7 @@ body{
 
 @media (max-width: 768px){
     .app{
-        flex-direction: flex;
+        flex-direction: column;
     }
 
     .Main{
