@@ -71,6 +71,10 @@ function Quiz({ setquestionNubmer,questionNubmer, submit ,earned,data, quit}) {
   return (
     <div className='quiz'>
 
+       <div  className='quit'>
+        <button onClick={quit} > Take Profit</button>
+      </div>
+
       <div className='questions'>
         {currentQuestion.question}
       </div>
@@ -87,7 +91,8 @@ function Quiz({ setquestionNubmer,questionNubmer, submit ,earned,data, quit}) {
         ))}
        
       </div>
-         <button onClick={quit} className='quit'> Take Profit</button>
+     
+         
     </div>
   )
 }

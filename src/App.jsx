@@ -60,10 +60,7 @@ function App(){
                   </div>
                    </>
                   ) } 
-              </div>
-              <div> 
-                <button>Reset</button>
-              </div>
+              </div> 
                
                <div  className="pyramid">
                 <ul className="moneylist"   >
