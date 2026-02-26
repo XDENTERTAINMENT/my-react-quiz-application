@@ -223,7 +223,7 @@ body{
     cursor: pointer;
     padding: 10px 10px;
     color: white;
-    background-color: black;
+    background-color: bl;
 }
 
 .quit:hover{
@@ -251,6 +251,57 @@ body{
         justify-content: center;
         text-align: center;
         
+        
+
+    }
+
+    .answer{
+        width: 100%;  /* single column on mobile */
+    }
+}
+
+
+
+@media (max-width: 560px){
+    .app{
+        
+        width: 100%;
+        flex-direction: column;
+     
+
+    }
+    
+    .Main{
+        width: 100%;
+        
+    }
+    .quit{
+            margin-top: -65px;
+            padding: 5px;
+            color: black;
+            width: 100%;
+            margin-right: 30px;
+
+            
+            
+            
+    }
+    .top{
+        margin-left: -25px;
+         
+
+    }
+
+    .timer{
+         margin-left: 30px;
+         margin-top: -7px;
+    }
+    .pyramid{
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        text-align: center;
+        margin-left: -70px;
         
 
     }

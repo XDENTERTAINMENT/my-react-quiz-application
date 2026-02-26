@@ -41,14 +41,13 @@ function App(){
 
     return(
         <div  className="app">
+                  
               <div className="Main"> 
                 {stopTime?  <h1 className="display"> you earned : {earned} </h1> :
                 ( <> 
                 <div  className="top">
                   <p className="timer">30</p>
-                  <audio>
-                    <source  src="c:\Users\USER\OneDrive\Desktop\my projects\Mern_stack\quiz-Application\src\assets\play.mp3"/>
-                  </audio>
+                  
                 </div>
                 <div className="bottom"><Quiz
                   setquestionNubmer={setQuestionNumber}
@@ -61,8 +60,9 @@ function App(){
                   </div>
                    </>
                   ) } 
-                
-               
+              </div>
+              <div> 
+                <button>Reset</button>
               </div>
                
                <div  className="pyramid">
