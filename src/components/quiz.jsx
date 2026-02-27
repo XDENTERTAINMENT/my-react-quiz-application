@@ -71,9 +71,7 @@ function Quiz({ setquestionNubmer,questionNubmer, submit ,earned,data, quit}) {
   return (
     <div className='quiz'>
 
-       <div  className='quit'>
-        <button onClick={quit} > Take Profit</button>
-      </div>
+       
 
       <div className='questions'>
         {currentQuestion.question}

@@ -26,6 +26,7 @@ function App(){
         {
           setStopTime(true)
         }
+        
    
 
         useEffect(() => {
@@ -47,9 +48,11 @@ function App(){
                 ( <> 
                 <div  className="top">
                   <p className="timer">30</p>
-                  
+                  <button className="takeProfit"  onClick={ quit} > Take Profit</button>
                 </div>
-                <div className="bottom"><Quiz
+              
+                <div className="bottom">
+                  <Quiz
                   setquestionNubmer={setQuestionNumber}
                   questionNubmer={questionNubmer}
                   submit={ setStopTime}
