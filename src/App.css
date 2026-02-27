@@ -286,56 +286,6 @@ body{
 
 
 
-@media (max-width: 560px){
-    .app{
-        
-        width: 100%;
-        flex-direction: column;
-     
-
-    }
-    .display{
-        margin-top: 100px;
-    }
-    
-    .Main{
-        width: 100%;
-        
-        
-    }
-      
-
-    .quiz{
-         width: 100%;
-       
-        justify-content: center;
-        text-align: center;
-        margin-left: 100px;
-        
-        
-    }
-           
-    
-   
-
-    .pyramid{
-        width: 100%;
-        order: 2;
-        justify-content: center;
-        text-align: center;
-          
-
-    }
-
-     .answer:hover{
-    background:none;
-      }
-
-    .answer{
-        width: 100%;  /* single column on mobile */
-    }
-    
-}
 
 @media (max-width: 414px){
     .app{
