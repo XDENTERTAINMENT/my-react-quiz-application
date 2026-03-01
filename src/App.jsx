@@ -29,8 +29,27 @@ function App(){
         
         useEffect(()=> 
           {
+             if(timer===0){
+              setStopTime(true);
+              return;
+             }
 
-          })
+               const interval =setInterval(()=> 
+            {
+              setTimer(prev => prev-1)
+            },1000);
+       
+            return ()=> clearInterval(interval);
+
+          },[timer]);
+
+          useEffect(()=>
+            {
+              setTimer(30);
+            },[questionNubmer])
+
+
+         
 
         useEffect(() => {
                 if (questionNubmer > 0) {
@@ -51,7 +70,7 @@ function App(){
                 {stopTime?  <h1 className="display"> you earned : {earned} </h1> :
                 ( <> 
                 <div  className="top">
-                  <p className="timer">30</p>
+                  <p className="timer">{timer}</p>
                   <button className="takeProfit"  onClick={ quit} > Take Profit</button>
                 </div>
               

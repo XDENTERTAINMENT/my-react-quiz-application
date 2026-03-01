@@ -1,10 +1,13 @@
-import React, { useState} from 'react'
-import question from './Question'
+import React, { useEffect, useState} from 'react'
+import question from './Question';
 
  
 
 
 function Quiz({ setquestionNubmer,questionNubmer, submit ,earned,data, quit}) {
+  
+   const  [ shuffledquestion ,setShuffledQuestion]= useState([]);
+   const [shuffledAnswers, setShuffledAnswers] = useState([]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   
@@ -12,15 +15,28 @@ function Quiz({ setquestionNubmer,questionNubmer, submit ,earned,data, quit}) {
 
   const [selectedAnswer, setSelectedAnswer]  = useState(null);
 
-  const currentQuestion = question[currentIndex];
 
+    const shuffledArray = (array) => {
+  return [...array].sort(() => Math.random() - 0.5);
+   };
 
-  const resetQuiz =()=>{
-    setCurrentIndex(0);
-    setClickedAnswer("answer");
-    setquestionNubmer(0);
-  }
+  useEffect(() => {
+  setShuffledQuestion(shuffledArray(question));
+  }, []);
+      
+ 
 
+      const currentQuestion = shuffledquestion[currentIndex];
+      if (!currentQuestion) return <div className="loading">Loading question...</div>;
+   
+   
+  
+  // const resetQuiz =()=>{
+  //   setCurrentIndex(0);
+  //   setClickedAnswer("answer");
+  //   setquestionNubmer(0);
+  // }
+   
   
 
   const handleSubmit = (answer) => {
@@ -56,7 +72,7 @@ function Quiz({ setquestionNubmer,questionNubmer, submit ,earned,data, quit}) {
       setTimeout(() => 
         {
           
-    if (currentIndex < question.length - 1) {
+     if (currentIndex < shuffledquestion.length - 1){
       setCurrentIndex(prev => prev + 1);
      };
         }, 4000)
@@ -76,7 +92,7 @@ function Quiz({ setquestionNubmer,questionNubmer, submit ,earned,data, quit}) {
       <div className='questions'>
         {currentQuestion.question}
       </div>
-
+   
       <div className="input1">
         {currentQuestion.answer.map((ans, index) => (
           <div
