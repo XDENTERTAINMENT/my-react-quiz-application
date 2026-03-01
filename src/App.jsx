@@ -14,7 +14,7 @@ import { useEffect } from "react";
 
 function App(){
 
-    const [item, setItem] = useState([]);
+    const [item, setItem] = useState(moneyList);
 
     const [questionNubmer, setQuestionNumber]= useState(0);
     const [timer,setTimer] =useState(30)
@@ -29,7 +29,7 @@ function App(){
         
         useEffect(()=> 
           {
-            
+
           })
 
         useEffect(() => {
