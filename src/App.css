@@ -161,9 +161,6 @@ body{
     
 }
 
-.answer:hover{
-    background:  mediumblue;
-}
 
 
 
@@ -270,9 +267,7 @@ body{
         
 
     }
-        .answer:hover{
-    background:none;
-      }
+       
 
 
     .input1{
@@ -284,7 +279,13 @@ body{
     }
 }
 
+@media(max-width: 1200px)  {
+    .answer:hover{
+    background:  mediumblue;
+}
 
+    
+}
 
 
 @media (max-width: 414px){
@@ -344,8 +345,5 @@ body{
         margin-top: 80px;
     }
 
-    .answer:hover{
-    background:none;
-}
 
 }

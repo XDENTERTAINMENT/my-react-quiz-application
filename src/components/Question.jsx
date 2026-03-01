@@ -1,112 +1,226 @@
 const question = [
 
+  // DATA ANALYSIS
   {
     id: 1,
-    question: "Who is the current President of Nigeria?",
+    question: "Which library is commonly used for data analysis in Python?",
     answer: [
-      { text: "Muhammadu Buhari", correct: false },
-      { text: "Atiku Abubakar", correct: false },
-      { text: "Bola Ahmed Tinubu", correct: true },
-      { text: "Peter Obi", correct: false }
+      { text: "NumPy", correct: false },
+      { text: "Pandas", correct: true },
+      { text: "TensorFlow", correct: false },
+      { text: "Flask", correct: false }
     ]
   },
 
   {
     id: 2,
-    question: "What is the name of Nigeria's anti-corruption agency?",
+    question: "What does CSV stand for?",
     answer: [
-      { text: "NDLEA", correct: false },
-      { text: "EFCC", correct: true },
-      { text: "FRSC", correct: false },
-      { text: "NNPC", correct: false }
+      { text: "Computer Separated Values", correct: false },
+      { text: "Comma Separated Values", correct: true },
+      { text: "Central Storage Value", correct: false },
+      { text: "Column Standard Variable", correct: false }
     ]
   },
 
   {
     id: 3,
-    question: "What does CBN stand for?",
+    question: "Which chart is best for showing trends over time?",
     answer: [
-      { text: "Central Bank of Nigeria", correct: true },
-      { text: "Commercial Bank Network", correct: false },
-      { text: "Credit Bureau of Nigeria", correct: false },
-      { text: "Citizens Banking Network", correct: false }
+      { text: "Bar Chart", correct: false },
+      { text: "Pie Chart", correct: false },
+      { text: "Line Chart", correct: true },
+      { text: "Histogram", correct: false }
     ]
   },
 
   {
     id: 4,
-    question: "Which body is responsible for road safety in Nigeria?",
+    question: "Data cleaning mainly involves what?",
     answer: [
-      { text: "NDLEA", correct: false },
-      { text: "FRSC", correct: true },
-      { text: "EFCC", correct: false },
-      { text: "NEMA", correct: false }
+      { text: "Removing errors and duplicates", correct: true },
+      { text: "Designing websites", correct: false },
+      { text: "Writing algorithms", correct: false },
+      { text: "Building networks", correct: false }
     ]
   },
 
   {
     id: 5,
-    question: "What is the official national oil company of Nigeria?",
+    question: "Which SQL command is used to retrieve data?",
     answer: [
-      { text: "NNPC Limited", correct: true },
-      { text: "Oando Nigeria", correct: false },
-      { text: "Shell Nigeria", correct: false },
-      { text: "Total Nigeria", correct: false }
+      { text: "INSERT", correct: false },
+      { text: "UPDATE", correct: false },
+      { text: "SELECT", correct: true },
+      { text: "DELETE", correct: false }
     ]
   },
 
+  // WEB DEVELOPMENT
   {
     id: 6,
-    question: "Which political party is currently in power at the federal level?",
+    question: "Which language is used to style web pages?",
     answer: [
-      { text: "PDP", correct: false },
-      { text: "APC", correct: true },
-      { text: "LP", correct: false },
-      { text: "NNPP", correct: false }
+      { text: "HTML", correct: false },
+      { text: "CSS", correct: true },
+      { text: "Python", correct: false },
+      { text: "C++", correct: false }
     ]
   },
 
   {
     id: 7,
-    question: "What does NDLEA fight against in Nigeria?",
+    question: "What does HTML stand for?",
     answer: [
-      { text: "Cybercrime", correct: false },
-      { text: "Drug trafficking", correct: true },
-      { text: "Road accidents", correct: false },
-      { text: "Tax evasion", correct: false }
+      { text: "Hyperlinks and Text Markup Language", correct: false },
+      { text: "Hyper Text Markup Language", correct: true },
+      { text: "Home Tool Markup Language", correct: false },
+      { text: "Hyper Tool Machine Language", correct: false }
     ]
   },
 
   {
     id: 8,
-    question: "Nigeria's law-making body is called what?",
+    question: "Which framework is used for building user interfaces in React apps?",
     answer: [
-      { text: "Supreme Court", correct: false },
-      { text: "National Assembly", correct: true },
-      { text: "Federal Council", correct: false },
-      { text: "Senate House", correct: false }
+      { text: "Angular", correct: false },
+      { text: "React", correct: true },
+      { text: "Django", correct: false },
+      { text: "Laravel", correct: false }
     ]
   },
 
   {
     id: 9,
-    question: "What currency is used in Nigeria?",
+    question: "Which CSS property controls layout alignment in flexbox?",
     answer: [
-      { text: "Dollar", correct: false },
-      { text: "Naira", correct: true },
-      { text: "Cedi", correct: false },
-      { text: "Rand", correct: false }
+      { text: "justify-content", correct: true },
+      { text: "font-size", correct: false },
+      { text: "display-block", correct: false },
+      { text: "text-align-center", correct: false }
     ]
   },
 
   {
     id: 10,
-    question: "Which organization manages elections in Nigeria?",
+    question: "Which tag is used to link CSS to HTML?",
     answer: [
-      { text: "INEC", correct: true },
-      { text: "EFCC", correct: false },
-      { text: "DSS", correct: false },
-      { text: "FRSC", correct: false }
+      { text: "<style>", correct: false },
+      { text: "<script>", correct: false },
+      { text: "<link>", correct: true },
+      { text: "<css>", correct: false }
+    ]
+  },
+
+  // ARTIFICIAL INTELLIGENCE (CSC 472 aligned)
+  {
+    id: 11,
+    question: "Who proposed the Turing Test?",
+    answer: [
+      { text: "Alan Turing", correct: true },
+      { text: "John McCarthy", correct: false },
+      { text: "Marvin Minsky", correct: false },
+      { text: "Herbert Simon", correct: false }
+    ]
+  },
+
+  {
+    id: 12,
+    question: "AI that performs one specific task is called what?",
+    answer: [
+      { text: "General AI", correct: false },
+      { text: "Narrow AI", correct: true },
+      { text: "Super AI", correct: false },
+      { text: "Strong AI", correct: false }
+    ]
+  },
+
+  {
+    id: 13,
+    question: "Which AI system uses rules and knowledge base?",
+    answer: [
+      { text: "Expert System", correct: true },
+      { text: "Compiler", correct: false },
+      { text: "Router", correct: false },
+      { text: "Database", correct: false }
+    ]
+  },
+
+  {
+    id: 14,
+    question: "Fuzzy logic is based on what type of truth values?",
+    answer: [
+      { text: "Binary true/false", correct: false },
+      { text: "Degrees of truth", correct: true },
+      { text: "Random values", correct: false },
+      { text: "Fixed values", correct: false }
+    ]
+  },
+
+  {
+    id: 15,
+    question: "Machine learning is a subset of what?",
+    answer: [
+      { text: "Web Development", correct: false },
+      { text: "Artificial Intelligence", correct: true },
+      { text: "Networking", correct: false },
+      { text: "Cybersecurity", correct: false }
+    ]
+  },
+
+  // NETWORKING
+  {
+    id: 16,
+    question: "What does IP stand for?",
+    answer: [
+      { text: "Internet Protocol", correct: true },
+      { text: "Internal Process", correct: false },
+      { text: "Information Path", correct: false },
+      { text: "Integrated Port", correct: false }
+    ]
+  },
+
+  {
+    id: 17,
+    question: "Which device connects different networks together?",
+    answer: [
+      { text: "Switch", correct: false },
+      { text: "Router", correct: true },
+      { text: "Hub", correct: false },
+      { text: "Modem", correct: false }
+    ]
+  },
+
+  {
+    id: 18,
+    question: "HTTP is mainly used for what?",
+    answer: [
+      { text: "Sending emails", correct: false },
+      { text: "Web communication", correct: true },
+      { text: "File storage", correct: false },
+      { text: "Database queries", correct: false }
+    ]
+  },
+
+  {
+    id: 19,
+    question: "What is the standard port for HTTPS?",
+    answer: [
+      { text: "21", correct: false },
+      { text: "25", correct: false },
+      { text: "443", correct: true },
+      { text: "110", correct: false }
+    ]
+  },
+
+  {
+    id: 20,
+    question: "LAN stands for what?",
+    answer: [
+      { text: "Local Area Network", correct: true },
+      { text: "Large Access Node", correct: false },
+      { text: "Linked Application Network", correct: false },
+      { text: "Logical Access Network", correct: false }
     ]
   }
 

@@ -14,7 +14,7 @@ import { useEffect } from "react";
 
 function App(){
 
-    const [item, setItem] = useState(moneyList);
+    const [item, setItem] = useState([]);
 
     const [questionNubmer, setQuestionNumber]= useState(0);
     const [timer,setTimer] =useState(30)
@@ -27,7 +27,10 @@ function App(){
           setStopTime(true)
         }
         
-   
+        useEffect(()=> 
+          {
+            
+          })
 
         useEffect(() => {
                 if (questionNubmer > 0) {
@@ -38,6 +41,7 @@ function App(){
             }
               }, [item, questionNubmer]);
 
+       
 
 
     return(
